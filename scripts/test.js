@@ -1,4 +1,6 @@
-﻿var translateTarget = document.getElementsByClassName('interlanguage-link-target'); 
+﻿(function () {
+
+var translateTarget = document.getElementsByClassName('interlanguage-link-target');
 
 function getLink(collection, lang)
 {
@@ -90,3 +92,5 @@ var linksSection = [
 	.filter(function (t) { return !!t; })
 	.join(", ");
 h.innerHTML += linksSection;
+
+})()
